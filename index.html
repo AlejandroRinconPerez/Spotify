@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="module" src="app.js"></script>
     <title>Document</title>
-    
-    <link rel="stylesheet" href="css/styleComponents.css">
-    <script type="module" src="js/components/myCompnents.js" defer></script>
 </head>
 <body>
-    <my-h7></my-h7>
-    <my-h8></my-h8>
-    <my-elements></my-elements>
+  <time-formatted datetime="2019-12-01"
+        year="numeric" month="long" day="numeric"
+        hour="numeric" minute="numeric" second="numeric"
+        time-zone-name="short"
+  ></time-formatted>
+  <hr>
+<auto-time-formatted id="elem" hour="numeric" minute="numeric" second="numeric"></auto-time-formatted>
+
+<button is="hello-button">Click me</button>
+
+  <hr>
+  <live-timer id="elem"></live-timer>
+  <user-card>
+    <div>Me gusta nadar.</div>
+    <span slot="username">Johlver Pardo</span>
+    <span slot="birthday">10-05-1974</span>
+    <div>...Y jugar volleyball también!</div>
+  </user-card>
 </body>
 </html>
